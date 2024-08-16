@@ -19,10 +19,18 @@ import (
 	"testing"
 )
 
+// # How to use this to develop test cases...
+// # First we should run some fuzzing... There are some basic seeds in this file, but additional seeds can be added to the test data folder
 // go test -fuzz=FuzzEVMRunner -cover github.com/ethereum/go-ethereum/cmd/evm
-// go test -cover -coverprofile=evm.out
-// go test -cover -coverprofile=evm.out github.com/ethereum/go-ethereum/cmd/evm
+// # Next, we should backup the test data folder
+// cp -r cmd/evm/testdata/fuzz/FuzzEVMRunner cmd/evm/testdata/fuzz/FuzzEVMRunner.bak
+// # Move the cached tests into the test data folder
+// cp $(go env GOCACHE)/fuzz/github.com/ethereum/go-ethereum/cmd/evm/FuzzEVMRunner/* cmd/evm/testdata/fuzz/FuzzEVMRunner/
+// # Run test coverage
 // go test -cover -coverpkg=./... -coverprofile=evm.out github.com/ethereum/go-ethereum/cmd/evm
+// # Narrow down the coverage to VM for now
+// go test -cover -coverpkg=./core/vm/... -coverprofile=evm.out github.com/ethereum/go-ethereum/cmd/evm
+// # Look at it
 // go tool cover --html=evm.out
 import (
 	"math/rand"
