@@ -1,0 +1,9 @@
+go test fuzz v1
+[]byte("0")
+[]byte("0")
+[]byte("414280803080FA")
+[]byte("0")
+uint64(30000157)
+uint64(99999999984)
+uint64(0)
+bool(false)

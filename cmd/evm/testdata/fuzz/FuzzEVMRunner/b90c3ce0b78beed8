@@ -1,0 +1,9 @@
+go test fuzz v1
+[]byte("\xd5")
+[]byte("\xd5")
+[]byte("\xd5")
+[]byte("Ս")
+uint64(30000077)
+uint64(100000000106)
+uint64(7)
+bool(true)

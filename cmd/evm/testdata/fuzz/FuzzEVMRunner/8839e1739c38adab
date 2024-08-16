@@ -1,0 +1,9 @@
+go test fuzz v1
+[]byte("\xff\xff\x96_=\xe4\xd7rc8a7C2K95964c8EfD687E95E632Fc533D6")
+[]byte("\xff\xff\x96_=\xe4\xd7r")
+[]byte("\xff\xff\x96_=\xe4\xd7rc8a7C2K95964c8EfD687E95E632Fc5")
+[]byte("\x18")
+uint64(30000000)
+uint64(99999999930)
+uint64(100000)
+bool(true)

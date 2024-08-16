@@ -1,9 +1,0 @@
-go test fuzz v1
-[]byte("0")
-[]byte("\x00\x06")
-[]byte("0")
-[]byte("70")
-uint64(29999867)
-uint64(100000000074)
-uint64(0)
-bool(false)

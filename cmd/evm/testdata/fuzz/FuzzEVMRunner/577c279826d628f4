@@ -1,0 +1,9 @@
+go test fuzz v1
+[]byte("\x13\"7BC100y92!e7)")
+[]byte("\x13e\xbf떮")
+[]byte("6Cz0B0cC0457bZ")
+[]byte("")
+uint64(30000000)
+uint64(100000000000)
+uint64(100000)
+bool(false)

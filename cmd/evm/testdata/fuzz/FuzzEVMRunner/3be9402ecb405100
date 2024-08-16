@@ -1,0 +1,9 @@
+go test fuzz v1
+[]byte("\xff")
+[]byte("\xbe\x13\b\xc7T\xcdY5퉲(\xa9\xc8~B4\xfe")
+[]byte("\xfb")
+[]byte("\xbe")
+uint64(30000060)
+uint64(99999999973)
+uint64(99936)
+bool(false)
